@@ -1,5 +1,6 @@
 streamlit
 pandas
-plotly.express
+plotly
 unicodedata
-plotly.graph_objects
+
+
