@@ -1,3 +1,7 @@
-openpyxl
-plotly
+streamlit>=1.28.0
+pandas>=2.0
+plotly>=5.15
+openpyxl>=3.1
+pyperclip>=1.8
+
 
