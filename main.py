@@ -12,7 +12,7 @@ def remove_acentos(txt):
     return unicodedata.normalize('NFKD',str(txt))\
                         .encode('ASCII','ignore')\
                         .decode('utf-8')
-@st.cache_data(ttl=0)
+@st.cache_data(ttl=60)
 def carregar_dados():
     colunas = ['Data','Pedido','NF', 'TV', 'Car','Pos','Cod','Cliente','Cidade','Praca','RCA','Vlr Atendido', 'Peso Total']
     df = pd.read_csv('vendas.TXT',index_col=False)
@@ -120,5 +120,6 @@ fig_icicle = px.icicle(df_filtrada,
                 values='Vlr Atendido',title='Divisão - Região / Cidade / Cliente')
 
 #st.plotly_chart(fig_icicle,use_container_width=True)
+
 
 
