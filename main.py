@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import plotly.express
+import plotly.express as px
 
 
 st.set_page_config(page_title='Comercial Meta',initial_sidebar_state='auto',layout='wide')
@@ -59,3 +59,4 @@ st.dataframe(
         'RCA': lambda x : x
     })
 )
+
